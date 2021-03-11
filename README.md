@@ -12,7 +12,7 @@ cd /ecodevice-influxdb
 pip3 install -r requirements.txt
 ```
 3. Configure config.ini file with the correct values
-```bash
+```python
 [influxdb]
 ip = localhost
 port = 3306
