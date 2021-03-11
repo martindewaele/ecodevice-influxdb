@@ -14,9 +14,9 @@ pip3 install -r requirements.txt
 3. Configure config.ini file with the correct values
 ```python
 [influxdb]
-ip = localhost
-port = 3306
-database = grafana
+ip = localhost --> if the InfluxDB is running on the localserver
+port = 8806    --> Default InfluxDB port
+database = grafana --> Database name
 [ecodevice]
-ip = 192.168.253.10
+ip = 192.168.253.10 --> IP address of Eco-Device
 ```
