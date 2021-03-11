@@ -15,10 +15,10 @@ pip3 install -r requirements.txt
 ```python
 [influxdb]
 ip = localhost --> if the InfluxDB is running on the localserver
-port = 8806    --> Default InfluxDB port
+port = 8086    --> Default InfluxDB port
 database = grafana --> Database name
 [ecodevice]
-ip = 192.168.253.10 --> IP address of Eco-Device
+ip = 192.168.253.102 --> IP address of Eco-Device
 ```
 
 If the database has not been created yet, the script will do it.
