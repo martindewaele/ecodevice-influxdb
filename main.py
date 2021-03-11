@@ -10,7 +10,7 @@ client = InfluxDBClient(host=parser.get('influxdb', 'ip'), port=parser.get('infl
 client.create_database(parser.get('influxdb', 'database'))
 client.switch_database(parser.get('influxdb', 'database'))
 #Resultat de la requete API
-url =('http://',parser.get('ecodevice', 'ip')'/api/xdevices.json?cmd=10')
+url =('http://'+parser.get('ecodevice', 'ip')+'/api/xdevices.json?cmd=10')
 fetched_url = requests.get(url)
 request_result = fetched_url.content
 result_dict = json.loads(request_result)
