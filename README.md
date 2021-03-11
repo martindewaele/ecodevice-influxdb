@@ -20,3 +20,10 @@ database = grafana --> Database name
 [ecodevice]
 ip = 192.168.253.10 --> IP address of Eco-Device
 ```
+
+If the database has not been created yet, the script will do it.
+
+4. Run main.py
+```bash
+python3 main.py
+```
