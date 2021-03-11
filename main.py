@@ -15,21 +15,16 @@ fetched_url = requests.get(url)
 request_result = fetched_url.content
 result_dict = json.loads(request_result)
 
-#Variabilisation des donnees
-product = result_dict['product']
-index_c1 = result_dict['INDEX_C1']
-index_c2 = result_dict['INDEX_C2']
-
 #Creation du bodyJson
 json_body = [
     {
         "measurement": "INDEX",
         "tags": {
-            "host": product
+            "host": result_dict['product']
         },
         "fields": {
-            "C1": index_c1,
-            "C2": index_c2
+            "C1": result_dict['INDEX_C1'],
+            "C2": result_dict['INDEX_C2']
         }
     }
 ]
