@@ -6,7 +6,7 @@ cd /home
 git clone https://github.com/martindewaele/ecodevice-influxdb.git
 ```
 
-2. Install PIP requirement
+2. Install Requirements
 ```bash
 cd /ecodevice-influxdb
 pip3 install -r requirements.txt
