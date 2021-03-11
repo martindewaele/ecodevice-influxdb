@@ -1,4 +1,4 @@
-<h1>Script to insert ecodevice metrics into InfluxdB</h1>
+<h1>Use Python to insert ecodevice metrics into InfluxdB</h1>
 
 1. Clone project
 ```bash
