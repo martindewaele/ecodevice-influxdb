@@ -11,3 +11,4 @@ git clone https://github.com/martindewaele/ecodevice-influxdb.git
 cd /ecodevice-influxdb
 pip3 install -r requirements.txt
 ```
+3. Configure config.ini file with the correct values
