@@ -28,7 +28,11 @@ ip = 192.168.253.102 --> IP address of Eco-Device
 
 If the database has not been created yet, the script will do it.
 
-4. Run main.py
+4.Make main.py executable
 ```bash
-python3 main.py
+chmod +x myscript.py
+```
+5. Run main.py
+```bash
+/main.py
 ```
