@@ -9,6 +9,7 @@ If the project already exists, simply run
 ```bash
 cd /ecodevice-influxdb
 git pull
+
 git 
 
 2. Install Requirements
