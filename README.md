@@ -1,10 +1,15 @@
 <h1>Use Python to insert ecodevice metrics into InfluxdB</h1>
-dddddd
 1. Clone project
 ```bash
 cd /home
 git clone https://github.com/martindewaele/ecodevice-influxdb.git
 ```
+
+If the project already exists, simply run 
+```bash
+cd /ecodevice-influxdb
+git pull
+git 
 
 2. Install Requirements
 ```bash
