@@ -32,3 +32,8 @@ If the database has not been created yet, the script will do it.
 ```bash
 python3 main.py
 ```
+5.Grafana json template
+
+```bash
+To do !
+```
