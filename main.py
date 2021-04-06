@@ -10,13 +10,13 @@ parser.read('config.ini')
 client = InfluxDBClient(host=parser.get('influxdb', 'ip'), port=parser.get('influxdb', 'port'))
 client.create_database(parser.get('influxdb', 'database'))
 client.switch_database(parser.get('influxdb', 'database'))
-#Resultat de la requete API
+#API request result
 url =('http://'+parser.get('ecodevice', 'ip')+'/api/xdevices.json?cmd=10')
 fetched_url = requests.get(url)
 request_result = fetched_url.content
 result_dict = json.loads(request_result)
 
-#Creation du bodyJson
+#Json Body creation
 json_body = [
     {
         "measurement": "INDEX",
@@ -29,5 +29,5 @@ json_body = [
         }
     }
 ]
-#Envoi vers Influxdb
+#Write points in InfluxDB 
 client.write_points(json_body)
